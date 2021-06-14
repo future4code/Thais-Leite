@@ -12,7 +12,7 @@
 
     3. Os nomes sugeridos são: "horasDeTrabalho" e "salarioDiario"
 
-***************************************************************************************************************************/
+****************************************************************************************************************************/
 /*
 
     // Exercícios de escrita de código
@@ -77,6 +77,7 @@
 
     console.log("O novo valor de a é", a)
     console.log("o novo valor de b é", b)
+
 //  console.log(`o novo valor de c é ${c}`) 
 //  poderia utilizar inteprolação: ${VARIAVEL}
 
