@@ -14,8 +14,9 @@
 
 ****************************************************************************************************************************/
 
+/*
 
-    /* Exercícios de escrita de código
+    // Exercícios de escrita de código
 
     // 1. 
 
@@ -53,6 +54,7 @@
 
     // 2. 
 
+
     let guardarONome = prompt("Qual o nome do seu cachorro?")
 
     let perguntaDois= prompt("Você se sente confortável agora?")
@@ -64,6 +66,19 @@
     let respostaDois = perguntaDois
     let respostaTres = perguntaTres
 
+
+    console.log("Você é feliz?", respostaUm)
+    console.log("Você se sente confortável agora?", respostaDois)
+    console.log("Você já bebeu água hoje?", respostaTres) 
+
+
+    let perguntaUm = prompt("Você é feliz?")
+    let perguntaDois= prompt("Você se sente confortável agora?")
+    let perguntaTres = prompt("Você já bebeu água hoje?")
+
+    let respostaUm = perguntaUm
+    let respostaDois = perguntaDois
+    let respostaTres = perguntaTres
 
     console.log("Você é feliz?", respostaUm)
     console.log("Você se sente confortável agora?", respostaDois)
@@ -86,7 +101,6 @@
 //  poderia utilizar inteprolação: ${VARIAVEL}
 
   
-
 
 
 
