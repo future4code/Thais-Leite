@@ -13,6 +13,7 @@
     3. Os nomes sugeridos são: "horasDeTrabalho" e "salarioDiario"
 
 ****************************************************************************************************************************/
+
 /*
 
     // Exercícios de escrita de código
@@ -53,6 +54,24 @@
 
     // 2. 
 
+
+    let guardarONome = prompt("Qual o nome do seu cachorro?")
+
+    let perguntaDois= prompt("Você se sente confortável agora?")
+    let perguntaTres = prompt("Você já bebeu água hoje?")
+
+    let guardarONomeDoSeuCachorroAqui = guardarONome // Joy
+
+
+    let respostaDois = perguntaDois
+    let respostaTres = perguntaTres
+
+
+    console.log("Você é feliz?", respostaUm)
+    console.log("Você se sente confortável agora?", respostaDois)
+    console.log("Você já bebeu água hoje?", respostaTres) 
+
+
     let perguntaUm = prompt("Você é feliz?")
     let perguntaDois= prompt("Você se sente confortável agora?")
     let perguntaTres = prompt("Você já bebeu água hoje?")
@@ -64,7 +83,7 @@
     console.log("Você é feliz?", respostaUm)
     console.log("Você se sente confortável agora?", respostaDois)
     console.log("Você já bebeu água hoje?", respostaTres) 
-*/
+
     // 3.
 
     let a = 10
@@ -82,5 +101,6 @@
 //  poderia utilizar inteprolação: ${VARIAVEL}
 
   
+
 
 
