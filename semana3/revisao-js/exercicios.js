@@ -48,7 +48,7 @@ function retornaMaiorNumero(array) { //Cria uma função para retornar maior nú
 
 // EXERCÍCIO 05
 function retornaQuantidadeElementos(array) {
-
+return array.length
 }
 
 // EXERCÍCIO 06
