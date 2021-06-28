@@ -71,26 +71,41 @@ function retornaNNumerosPares(n) { // função para adicionar números pares em 
 
 
 // EXERCÍCIO 08
-function checaTriangulo(a, b, c) {
-  if (a !== b && b !== c) {
-    return 'Escaleno'
-  } else if (a === b && b === c) {
-    return 'Equilátero'
-  } else {
-    return 'Isósceles'
+function checaTriangulo(a, b, c) { // função com parâmetros já estabelecidos (lado a, lado b, lado c)
+  if (a !== b && b !== c) { // Se todos os lados forem diferentes
+    return 'Escaleno' // retorne Escaleno
+  } else if (a === b && b === c) { // Se todos os lados forem iguais
+    return 'Equilátero' // retorne Equilatero
+  } else { // se não for nenhuma das condições acima:
+    return 'Isósceles' // retorne Isósceles
   }
 
 }
 
 // EXERCÍCIO 09
-function comparaDoisNumeros(num1, num2) {
-  // Formato do objeto a ser retornado:
-  // {
-  //   maiorNumero: X,
-  //   maiorDivisivelPorMenor: Y,
-  //   diferenca: Z
-  // }
+function comparaDoisNumeros(num1, num2) { // função com parâmetro de dois números a serem declarados
+  let maiorNumero // variável para estabelecer o maior número
+  let menorNumero // variável para estabelecer o menor número
+  let maiorDivisivelPorMenor // variável para armazenar a divisão dos números anteriores
+
+  if (num1 > num2) { // se o primeiro for maior que o segundo,
+    maiorNumero = num1 //o maior Numero será o num1
+    menorNumero = num2 // e o menor número será o num2
+
+  } else { // caso contrário
+
+    maiorNumero = num2 // o maior número será o num2
+    menorNumero = num1 // e o menor será o num1
+  }
+  maiorDivisivelPorMenor = maiorNumero % menorNumero === 0 // checa diferenca com num. positivo
+ const diferenca = maiorNumero - menorNumero // armazena valor da diferença
+  return { // retorna em Objeto os elementos pedidos
+    maiorNumero: maiorNumero,
+    maiorDivisivelPorMenor: maiorDivisivelPorMenor,
+    diferenca: diferenca
+  }
 }
+
 
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
