@@ -48,7 +48,7 @@ function retornaMaiorNumero(array) { //Cria uma função para retornar maior nú
 
 // EXERCÍCIO 05
 function retornaQuantidadeElementos(array) {
-return array.length
+  return array.length
 }
 
 // EXERCÍCIO 06
@@ -58,9 +58,17 @@ function retornaExpressoesBooleanas() {
 }
 
 // EXERCÍCIO 07
-function retornaNNumerosPares(n) {
-
+function retornaNNumerosPares(n) { // função para declarar números pares no novo array "n"
+  const newArray = []; // variável para guardar o novo array que será realizado
+  for (let numero = 0; numerosParess.length < n; numero++) { // Quando a partir do índice zero, o tamanho do número for
+    // menor que o tamanho do array inteiro, ele deve adicionar um novo valor à variável.
+    if (numero % 2 === 0) { //Se o número for múltiplo de 2,
+      newArray.push(numero) // o computador adicionará esse número ao novoArray.
+    }
+  }
+  return newArray // Retorna o novo array com os números pares adicionados.
 }
+
 
 // EXERCÍCIO 08
 function checaTriangulo(a, b, c) {
