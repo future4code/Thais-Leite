@@ -53,7 +53,8 @@ return array.length
 
 // EXERCÍCIO 06
 function retornaExpressoesBooleanas() {
-
+  const respostas = [false, false, true, true, true]
+  return respostas
 }
 
 // EXERCÍCIO 07
