@@ -24,16 +24,7 @@ function retornaNumerosParesElevadosADois(array) { // O pc criou a função com 
 
 
 // EXERCÍCIO 03
-function retornaNumerosPares(array) { // Cria-se a função que recebe como parâmetro um array já estabelecido.
-  let arrayPares = []; // Cria uma nova variável com array vazio para receber novos valores
-  for (let i = 0; i < array.length; i++){ // Estabelece que o contador inicia o cálculo no 0 e define que a condição de
-    // execução dessa função é que o contador deve ser menor que o tamanho do array. O incremento é adicionar novos
-    // números no novo array, que estejam dentro das condições estabelecidas.
-    if (array [i] % 2 === 0) // Caso tenha passado nas condições anteriores E for POSITIVO
-  arrayPares.push(array[i]) // Será adicionado ao novo Array somente os números pares.
-  }
-  return arrayPares // retorna o novo Array
-}
+function retornaNumerosPares(array) { 
 
 // EXERCÍCIO 04
 function retornaMaiorNumero(array) {
