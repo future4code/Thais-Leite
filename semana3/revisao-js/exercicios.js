@@ -37,9 +37,9 @@ function retornaNumerosPares(array) { // Cria-se a função para retornar númer
 // EXERCÍCIO 04
 function retornaMaiorNumero(array) { //Cria uma função para retornar maior número do Array, parâmetros já prontos
   let devolveMaior = array[0]; // Cria uma nova variável com o primeiro elemento do array 
-  for (let i = 0; i < array.length; i++) { // Estabelece que o contador inicie a função no índice 0 do array,
-    // e, desde que esse índice seja menor que o tamanho do array, ele deve adicionar novos números no novo array.
-    if (devolveMaior < array[i]) { // Caso o valor de devolve maior for menor que o índice do array,
+  for (let i = 0; i < array.length; i++) { // Estabelece que o contador inicie a função aceitando valores a partir
+    // de zero e, desde que esse valor seja menor que o tamanho do array, ele será acrescido novo array.
+    if (devolveMaior < array[i]) { // SOMENTE SE o valor de devolve maior for menor que o índice do array,
       devolveMaior = array[i] // o computador deve atribuir ao devolve maior o valor de array com os índices já inseridos
     }
   }
@@ -58,23 +58,28 @@ function retornaExpressoesBooleanas() {
 }
 
 // EXERCÍCIO 07
-function retornaNNumerosPares(n) { // função para declarar números pares no novo array "n"
-  const newArray = []; // variável para guardar o novo array que será realizado
-  for (let numero = 0; numerosParess.length < n; numero++) { // Quando a partir do índice zero, o tamanho do número for
-    // menor que o tamanho do array inteiro, ele deve adicionar um novo valor à variável.
-    if (numero % 2 === 0) { //Se o número for múltiplo de 2,
-      newArray.push(numero) // o computador adicionará esse número ao novoArray.
+function retornaNNumerosPares(n) { // função para adicionar números pares em um novo Array, com parâmetro numero.
+  const arrayPares = []; // Nova variável para guardar no novo array que será incrementado.
+  for (let number = 0; arrayPares.length < n; number++) { // Quando a partir do valor zero, o tamanho do array for
+    // menor que o tamanho do array inteiro, ele terá um novo valor acrescido:
+    if (number % 2 === 0) { //SOMENTE SE o número for múltiplo de 2,
+      arrayPares.push(number) // o computador adicionará esses números ao novoArray.
     }
   }
-  return newArray // Retorna o novo array com os números pares adicionados.
+  return arrayPares // Retorna o novo array com os números pares adicionados.
 }
 
 
 // EXERCÍCIO 08
 function checaTriangulo(a, b, c) {
-  // return 'Escaleno'
-  // return 'Equilátero'
-  // return 'Isósceles'
+  if (a !== b && b !== c) {
+    return 'Escaleno'
+  } else if (a === b && b === c) {
+    return 'Equilátero'
+  } else {
+    return 'Isósceles'
+  }
+
 }
 
 // EXERCÍCIO 09
