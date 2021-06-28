@@ -1,39 +1,54 @@
 // EXERCÍCIO 01
 function inverteArray(array) {
   let arrayInvertido = [];
-  for(let i = array.length - 1; i >= 0; i-- ) {
-      arrayInvertido.push(array[i]) // Coloquei esse "array[i] porque sei que funciona, mas não entendi porque 
-      //da um push em arra[i] e não do contador, se é a partir dele que que é chamado o contador"
-    }
-  return arrayInvertido
+  for (let i = array.length - 1; i >= 0; i--) {
+    arrayInvertido.push(array[i]) // Coloquei esse "array[i] porque sei que funciona, mas não entendi porque 
+    //da um push em arra[i] e não do contador, se é a partir dele que que é chamado o contador"
   }
+  return arrayInvertido
+}
 
 // EXERCÍCIO 02
-function retornaNumerosParesElevadosADois(array) { // O pc criou a função com o nome e recebe um parâmetro de Array
+function retornaNumerosParesElevadosADois(array) { // O pc criou a função para retornar os números pares do array
   let novoArray = []; // Cria um novo array vazio para receber os novos valores
-	for(let i = 0; i < array.length; i++) { // o contador inicia o cálculo no índice 0, a condição é que esse número
+  for (let i = 0; i < array.length; i++) { // o contador inicia o cálculo no índice 0, a condição é que esse número
     //seja maior que o tamanho da Array, e o incremento é adicionar +1 ao tamanho do array, cada vez que o código for
     // verdadeiro nessas primeiras condições.
-		if(array[i] % 2 === 0) { // Se o índice do array for positivo,
+    if (array[i] % 2 === 0) { // Se o índice do array for positivo,
       novoArray.push(array[i] * array[i]) // o computador deve multiplicar o primeiro índice com o sgundo no 
       //novo array
     }
   }
-	return novoArray // retorna o novo array
+  return novoArray // retorna o novo array
 }
 
-
 // EXERCÍCIO 03
-function retornaNumerosPares(array) { 
+function retornaNumerosPares(array) { // Cria-se a função para retornar números pares do array
+  let arrayPares = []; // Cria uma nova variável com array vazio para receber novos valores
+  for (let i = 0; i < array.length; i++) { // Estabelece que o contador inicia o cálculo no 0 e define que a condição de
+    // execução dessa função é que o contador deve ser menor que o tamanho do array. O incremento é adicionar novos
+    // números no novo array, que estejam dentro das condições estabelecidas.
+    if (array[i] % 2 === 0) // Caso tenha passado nas condições anteriores E for POSITIVO
+      arrayPares.push(array[i]) // Será adicionado ao novo Array somente os números pares.
+  }
+  return arrayPares // retorna o novo Array
+}
 
 // EXERCÍCIO 04
-function retornaMaiorNumero(array) {
-
+function retornaMaiorNumero(array) { //Cria uma função para retornar maior número do Array, parâmetros já prontos
+  let devolveMaior = array[0]; // Cria uma nova variável com o primeiro elemento do array 
+  for (let i = 0; i < array.length; i++) { // Estabelece que o contador inicie a função no índice 0 do array,
+    // e, desde que esse índice seja menor que o tamanho do array, ele deve adicionar novos números no novo array.
+    if (devolveMaior < array[i]) { // Caso o valor de devolve maior for menor que o índice do array,
+      devolveMaior = array[i] // o computador deve atribuir ao devolve maior o valor de array com os índices já inseridos
+    }
+  }
+  return devolveMaior
 }
 
 // EXERCÍCIO 05
 function retornaQuantidadeElementos(array) {
-  
+
 }
 
 // EXERCÍCIO 06
