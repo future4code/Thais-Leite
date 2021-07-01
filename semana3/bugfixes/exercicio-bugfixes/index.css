@@ -7,6 +7,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 h2 {
@@ -19,6 +20,7 @@ h2 {
 input {
     height: 20px;
     width: 500px;
+       
 }
 
 button:focus {
@@ -117,8 +119,9 @@ td button:hover {
 }
 
 .container-do-search {
-    margin-top: 20px;
+    margin-top: 100px;
     height: 100px;
+    
 }
 
 
